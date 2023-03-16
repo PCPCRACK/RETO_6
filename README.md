@@ -9,7 +9,14 @@
 
 ```python
 #Una función matemática para calcular el volumen y el área superficial
-def VolumenESF(r:float):#se pide el radio de la esfera
-    pi=3.14159265359
-    return (4/3)*pi*r**3
+def VandAr(r:float,d:float):
+    pi = 3.14159265359
+    r = (4/3)*pi*r**3 
+    d = 4*pi*d**2
+    return r,d
+    
+a = float(input("Radio "))#se pide el radio de la esfera
+b = float(input("diametro "))#se pide el diametro de la esfera
+VandAr=VandAr(a,b) #llama la funcion
+print("Radio y Diametro de la esfera ",VandAr)
 ```
