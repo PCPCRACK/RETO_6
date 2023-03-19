@@ -35,7 +35,6 @@ if __name__ == "__main__":
     ConoVandAr = ConoVandAr(b,c)
     print("El volumen en cm3 y Area de la esfera en cm2 es ",cirVandAr)
     print("El volumen en cm3 y Area del cono en cm2 es ",ConoVandAr)
-
 ```
 
 2. Dado la figura de la imagen, desarrolle:
@@ -73,5 +72,22 @@ if __name__ == "__main__":
     RectArandPer = RectArandPer(b,c)
     print("El Area en cm2 y Perimetro en cm del circulo es ",cirArandPer)
     print("El Area en cm2 y Perimetro en cm del rectangulo es ",RectArandPer)
+```
 
+3.Diseñe una función que calcule la cantidad de carne de aves en kilos si se tienen N gallinas, M gallos y K pollitos cada uno pesando 6 kilos, 7 kilos y 1 kilo respectivamente.
+
+
+```python
+#una función que calcule la cantidad de carne de aves en kilos 
+
+def suma(N:float,M:float,K:float):
+    return (N*6)+(M*7)+(K*1)#multiplica y suma todo
+    
+
+if __name__ == "__main__":
+    N = float(input("N° de gallinas? "))#pregunta cuantos de cada uno
+    M = float(input("N° de gallos? "))
+    K = float(input("N° de pollitos? "))
+    suma = suma(N,M,K)#llama la funcion
+    print("La cantidad de carne de aves en kilos es ",suma)
 ```
