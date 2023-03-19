@@ -139,6 +139,21 @@ if __name__ == "__main__":
 
 6.El número de contagiados de Covid-19 en el país de NuncaLandia se duplica cada día. Hacer un programa que diga el número total de personas que se han contagiado cuando pasen D días a partir de hoy, si el número de contagiados actuales es C.
 
+```python
+def Num_contagios(x:float,a:float):
+    D = 0
+    while D<a: #mientras D sea menor que los dias
+        x *= 2 #se miltiplica X por 2
+        D += 1 #se suma uno a D hasta que sea igual a A
+    return x
+
+if __name__ == "__main__":
+    x = float(input("numero de contagiados ")) #pregunta N° de contagiados y de dias
+    A = float(input("numero de Dias "))
+    N = Num_contagios(x,A)#llama la funcion
+    print("El numero total de contagiados es ",N, " en un total de ",A," dias" )
+```
+
 7. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones usando una función para cada una:
   + El promedio
   + La mediana 
