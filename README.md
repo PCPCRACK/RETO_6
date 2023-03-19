@@ -37,3 +37,41 @@ if __name__ == "__main__":
     print("El volumen en cm3 y Area del cono en cm2 es ",ConoVandAr)
 
 ```
+
+2. Dado la figura de la imagen, desarrolle:
+
+<div align='center'>
+<figure> <img src="https://i.postimg.cc/1t4MrzsL/image.png" alt="" width="400" height="auto"/></br>
+<figcaption><b></b></figcaption></figure>
+</div>
+
++ Una función matemática para calcular el área y el perimetro.
++ Cree dos funciones en python para calcular los valores antes establecidos, al ingresar por teclado `r`, `a` y `b`.
++ Revise como utilizar el valor de `pi` usando *import math* y *math.pi*
+
+
+```python
+#Una función matemática para calcular el área y el perimetro.
+#se importa de las librerias pi
+from math import pi
+
+def cirArandPer(r:float): 
+    A = pi*r**2
+    P = 2*pi*r
+    return A,P
+
+def RectArandPer(B:float,A:float):
+    Ar = B*A
+    P = 2*(B+A)
+    return Ar,P
+
+if __name__ == "__main__":
+    a = float(input("Radio del circulo "))#se pide el radio del circulo
+    b = float(input("Base del rectangulo "))#se pide la base del rectangulo
+    c = float(input("Altura del rectangulo "))#se pide la altura del rectangulo
+    cirArandPer = cirArandPer(a) #llaman las funciones
+    RectArandPer = RectArandPer(b,c)
+    print("El Area en cm2 y Perimetro en cm del circulo es ",cirArandPer)
+    print("El Area en cm2 y Perimetro en cm del rectangulo es ",RectArandPer)
+
+```
