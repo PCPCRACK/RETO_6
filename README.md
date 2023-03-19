@@ -9,14 +9,14 @@
 
 ```python
 #Una función matemática para calcular el volumen y el área superficial
-def VandAr(r:float,d:float):
+def VandAr(r:float):
     pi = 3.14159265359
-    r = (4/3)*pi*r**3 
-    d = 4*pi*d**2
-    return r,d
+    V = (4/3)*pi*r**3 
+    A = 4*pi*(r*2)**2
+    return V,A
     
 a = float(input("Radio "))#se pide el radio de la esfera
-b = float(input("diametro "))#se pide el diametro de la esfera
-VandAr=VandAr(a,b) #llama la funcion
-print("Radio y Diametro de la esfera ",VandAr)
+VandAr=VandAr(a) #llama la funcion
+print("El volumen y Area de la esfera es ",VandAr)
+
 ```
