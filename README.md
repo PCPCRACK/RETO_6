@@ -91,3 +91,44 @@ if __name__ == "__main__":
     suma = suma(N,M,K)#llama la funcion
     print("La cantidad de carne de aves en kilos es ",suma)
 ```
+
+5.Mi mamá me manda a comprar P panes a 300 cada uno, M bolsas de leche a 3300 cada una y H huevos a 350 cada uno. Hacer un programa que me diga las vueltas (o lo que quedo debiendo) cuando me da un billete de B pesos.
+
+```python
+#Hacer un programa que me diga las vueltas (o lo que quedo debiendo)
+
+def suma(N:float,M:float,K:float,B:float):
+    return B-((N*300)+(M*3300)+(K*350)) #multiplica y suma y luego resta el billete
+    
+
+if __name__ == "__main__":
+    P = float(input("N° de Panes? ")) #pregunta cuantos de cada uno
+    M = float(input("N° de Bolsas de leche? "))
+    H = float(input("N° de Huevos ? "))
+    B = float(input("Valor billete "))
+    suma = suma(P,M,H,B) #llama la funcion
+    if suma>0: #si suma es mayor a cero
+        print("Las vueltas son ",suma)
+    else :
+        print("Quedaste debiendo ",suma)
+```
+
+5.Haga un programa que utilice una función para calcular el valor de un préstamo C usando interés compuesto del i por n meses.
+
+6.El número de contagiados de Covid-19 en el país de NuncaLandia se duplica cada día. Hacer un programa que diga el número total de personas que se han contagiado cuando pasen D días a partir de hoy, si el número de contagiados actuales es C.
+
+7. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones usando una función para cada una:
+  + El promedio
+  + La mediana 
+  + El promedio multiplicativo (multilplica todos y luego calcula la raíz de la cantidad de operandos)
+  + Ordenar los números de forma ascendente
+  + Ordenar los números de forma descendente
+  + La potencia del mayor número elevado al menor número
+  + La raíz cúbica del menor número
+
+8. Para el punto anterior incluir las funciones en un archivo independiente e importarlas para su uso.
+
+9. Consultar qué es y cómo funciona *pip* en python.
+
+10. Hacer un listado de módulos populares para python que se puedan instalar com *pip* y consultar cómo instalarlos.
+
