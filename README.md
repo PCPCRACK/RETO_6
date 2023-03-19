@@ -22,13 +22,14 @@ def ConoVandAr(r:float,h:float):
     g = sqrt((r**2)+(h**2))
     A = pi*r*(g+r)
     return V,A
-    
-a = float(input("Radio esfera "))#se pide el radio de la esfera
-b = float(input("Radio cono "))#se pide el radio del cono
-c = float(input("Altura cono"))#se pide la altura del cono
-cirVandAr = cirVandAr(a) #llaman las funciones
-ConoVandAr = ConoVandAr(b,c)
-print("El volumen en cm3 y Area de la esfera en cm2 es ",cirVandAr)
-print("El volumen en cm3 y Area del cono en cm2 es ",ConoVandAr)
+
+if __name__ == "__main__":
+    a = float(input("Radio esfera "))#se pide el radio de la esfera
+    b = float(input("Radio cono "))#se pide el radio del cono
+    c = float(input("Altura cono "))#se pide la altura del cono
+    cirVandAr = cirVandAr(a) #llaman las funciones
+    ConoVandAr = ConoVandAr(b,c)
+    print("El volumen en cm3 y Area de la esfera en cm2 es ",cirVandAr)
+    print("El volumen en cm3 y Area del cono en cm2 es ",ConoVandAr)
 
 ```
