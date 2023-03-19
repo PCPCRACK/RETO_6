@@ -115,6 +115,28 @@ if __name__ == "__main__":
 
 5.Haga un programa que utilice una función para calcular el valor de un préstamo C usando interés compuesto del i por n meses.
 
+```python
+def valor_prestamo(p, i, n):
+    """
+    Esta función calcula el valor de un préstamo utilizando interés compuesto.
+    
+    p: el monto del préstamo inicial
+    i: la tasa de interés anual (como fracción, por ejemplo, 0.05 para una tasa del 5%)
+    n: el número de meses para los cuales se calcula el interés
+    
+    return: el valor del préstamo después de n meses con interés compuesto
+    """
+    r = (1 + i/12)**n # cálculo del factor de interés compuesto
+    return p*r # cálculo del valor final del préstamo
+
+if __name__ == "__main__":
+    prestamo_inicial = float(input("Prestamo inicial "))
+    tasa_interes_anual = float(input("Tasa de interes "))
+    num_meses = float(input("Tiempo en meses "))
+    valor_final = valor_prestamo(prestamo_inicial, tasa_interes_anual, num_meses)
+    print("El valor final del préstamo es: ", valor_final)
+```
+
 6.El número de contagiados de Covid-19 en el país de NuncaLandia se duplica cada día. Hacer un programa que diga el número total de personas que se han contagiado cuando pasen D días a partir de hoy, si el número de contagiados actuales es C.
 
 7. Escriba un programa que pida 5 números reales y calcule las siguientes operaciones usando una función para cada una:
