@@ -1,11 +1,15 @@
 # RETO_6
-#punto1: Dado la figura de la imagen, desarrolle:
 
-1:Una función matemática para calcular el volumen y el área superficial.
+1. Dado la figura de la imagen, desarrolle:
 
-2:Cree dos funciones en python para calcular los valores antes establecidos, al ingresar por teclado r1, r2 y h.
+<div align='center'>
+<figure> <img src="https://i.postimg.cc/FRvCmpxx/image.png" alt="" width="400" height="auto"/></br>
+<figcaption><b></b></figcaption></figure>
+</div>
 
-3:Revise como utilizar el valor de pi usando import math y math.pi.
++ Una función matemática para calcular el volumen y el área superficial.
++ Cree dos funciones en python para calcular los valores antes establecidos, al ingresar por teclado `r1`, `r2` y `h`.
++ Revise como utilizar el valor de `pi` usando *import math* y *math.pi*
 
 ```python
 #Una función matemática para calcular el volumen y el área superficial
