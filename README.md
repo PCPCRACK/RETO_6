@@ -218,3 +218,13 @@ if __name__ == "__main__":
     print(raiz_cubica_menor(numeros))
 ```
 
+#Hacer un listado de módulos populares para python que se puedan instalar
+1. Matplotlib
+2. TensorFlow
+3. PyTorch
+4. Keras
+5. Scikit-learn
+6. Pandas
+7. Seaborn
+8. Bokeh
+9. NumPy
