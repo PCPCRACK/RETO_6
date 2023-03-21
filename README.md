@@ -164,46 +164,57 @@ if __name__ == "__main__":
   + La raíz cúbica del menor número
 
 ```python
-import math
-
-# Función para calcular el promedio de los números
+# Función para calcular el promedio de una lista de números
 def promedio(nums):
-    return sum(nums) / len(nums)
+    total = sum(nums)
+    return total / len(nums)
 
-# Función para calcular la mediana de los números
+# Función para calcular la mediana de una lista de números
 def mediana(nums):
-    sorted_nums = sorted(nums)
-    n = len(sorted_nums)
-    if n % 2 == 0:
-        return (sorted_nums[n//2-1] + sorted_nums[n//2]) / 2
+    nums = sorted(nums)
+    mid = len(nums) // 2
+    if len(nums) % 2 == 0:
+        return (nums[mid-1] + nums[mid]) / 2
     else:
-        return sorted_nums[n//2]
+        return nums[mid]
 
-# Función para calcular el promedio multiplicativo de los números
+# Función para calcular el promedio multiplicativo de una lista de números
 def promedio_multiplicativo(nums):
-    producto = 1
+    total = 1
     for num in nums:
-        producto *= num
-    return producto ** (1/len(nums))
+        total *= num
+    return total ** (1/len(nums))
 
-# Pedir 5 números al usuario
-nums = []
-for i in range(5):
-    nums.append(float(input("Ingrese un número real: ")))
+# Función para ordenar una lista de números de forma ascendente
+def orden_ascendente(nums):
+    return sorted(nums)
 
-# Calcular y mostrar los resultados
-print("El promedio es:", promedio(nums))
-print("La mediana es:", mediana(nums))
-print("El promedio multiplicativo es:", promedio_multiplicativo(nums))
-print("Los números ordenados de forma ascendente son:", sorted(nums))
-print("Los números ordenados de forma descendente son:", sorted(nums, reverse=True))
-print("El mayor número elevado al menor número es:", max(nums) ** min(nums))
-print("La raíz cúbica del menor número es:", math.pow(min(nums), 1/3))
+# Función para ordenar una lista de números de forma descendente
+def orden_descendente(nums):
+    return sorted(nums, reverse=True)
+
+# Función para calcular la potencia del mayor número elevado al menor número
+def potencia_mayor_menor(nums):
+    mayor = max(nums)
+    menor = min(nums)
+    return mayor ** menor
+
+# Función para calcular la raíz cúbica del menor número
+def raiz_cubica_menor(nums):
+    menor = min(nums)
+    return menor ** (1/3)
+
+if __name__ == "__main__":
+    numeros = [] # Pedir 5 números al usuario
+    for i in range(5):
+        numeros.append(float(input("Ingrese un número real: ")))
+    # Calcular y mostrar los resultados
+    print(promedio(numeros))
+    print(mediana(numeros))
+    print(promedio_multiplicativo(numeros))
+    print(orden_ascendente(numeros))
+    print(orden_descendente(numeros))
+    print(potencia_mayor_menor(numeros))
+    print(raiz_cubica_menor(numeros))
 ```
-
-8. Para el punto anterior incluir las funciones en un archivo independiente e importarlas para su uso.
-
-9. Consultar qué es y cómo funciona *pip* en python.
-
-10. Hacer un listado de módulos populares para python que se puedan instalar com *pip* y consultar cómo instalarlos.
 
